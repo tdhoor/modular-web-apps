@@ -1,0 +1,39 @@
+{
+  "name": "stencil-app",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Stencil App Starter",
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "prod": "npm start --prod"
+  },
+  "devDependencies": {
+    "@stencil/core": "^2.0.0",
+    "@stencil/router": "^1.0.1",
+    "@types/jest": "^26.0.20"
+  },
+  "license": "MIT",
+
+  "author": "",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2",
+    "rxjs": "^6.6.6"
+  },
+
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "unpkg": "dist/ionic/ionic.js",
+  "collection:main": "dist/collection/index.js",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/",
+    "loader/"
+  ]
+}
